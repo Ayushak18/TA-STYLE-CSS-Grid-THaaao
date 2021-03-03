@@ -179,6 +179,7 @@ a {
   border-top: 0.2rem solid #2ea0c8;
   border-top-left-radius: 0.2rem;
   border-top-right-radius: 0.2rem;
+  margin: 2rem 0;
 }
 
 .col h2 {
@@ -222,9 +223,5 @@ a {
 
 .nav-menu a {
   color: #2ea0c8;
-}
-
-.col-2 {
-  grid-row: span 2;
 }
 /*# sourceMappingURL=style.css.map */
