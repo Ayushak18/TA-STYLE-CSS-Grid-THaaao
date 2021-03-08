@@ -155,14 +155,30 @@ body {
 .grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 100vh;
-      grid-template-rows: 100vh;
+}
+
+.align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 a {
   text-decoration: none;
+}
+
+.button {
+  display: inline-block;
+  border: 2px solid black;
+  color: black;
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 header {
@@ -170,12 +186,171 @@ header {
   width: 100%;
 }
 
+header .page-heading a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #383838;
+}
+
 header ul a {
   margin-right: 2rem;
   font-size: 0.7rem;
+  font-weight: 500;
+  color: #aea59e;
+}
+
+.hero {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 100vh;
+      grid-template-rows: 100vh;
 }
 
 .hero img {
   width: 100%;
+  height: 100%;
+}
+
+.hero .hero-img {
+  background: url(./assets/media/home-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero .hero-text-section {
+  background: #f5e3d7;
+}
+
+.hero .hero-text {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 5rem 2rem;
+}
+
+.hero .hero-text h1 {
+  font-size: 2rem;
+  font-weight: 100;
+  margin: 1rem 0;
+}
+
+.hero .hero-text h1 strong {
+  font-weight: 300;
+}
+
+.hero .hero-text p {
+  font-size: 0.6rem;
+  color: #b8b2ae;
+  line-height: 2;
+}
+
+.hero .hero-text p:first-child {
+  letter-spacing: 0.1rem;
+}
+
+.hero .hero-text .button {
+  margin-top: 2rem;
+}
+
+.about {
+  -ms-grid-columns: 2fr 1fr 1fr;
+      grid-template-columns: 2fr 1fr 1fr;
+  -ms-grid-rows: 35vh;
+      grid-template-rows: 35vh;
+}
+
+.about img {
+  width: 100%;
+  height: 100%;
+}
+
+.about .about-text {
+  padding: 1rem;
+}
+
+.about .about-text h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #424242;
+}
+
+.about .about-text p {
+  font-size: 0.6rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.5;
+  color: #b6b6b6;
+}
+
+.about .about-text p:first-of-type {
+  color: #f7ddb5;
+  margin: 0.8rem 0;
+}
+
+.about .about-skills {
+  padding: 1rem;
+  background: #ecaf4e;
+}
+
+.about .about-skills h2 {
+  color: #fcf5e9;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.about .about-skills p {
+  margin: 1rem 0;
+  font-size: 0.6rem;
+  letter-spacing: 0.1rem;
+  color: #fcf5e9;
+}
+
+.about .about-skills label {
+  color: #2a3230;
+  font-size: 0.8rem;
+}
+
+.about .about-skills progress {
+  display: block;
+  height: 0.5rem;
+}
+
+.skills {
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.skills .skills-col:nth-child(2) {
+  background: #f2663c;
+}
+
+.skills .skills-col:nth-child(3) {
+  background: #161616;
+}
+
+.skills .skills-col {
+  padding: 1rem;
+  color: white;
+}
+
+.skills .skills-col:first-of-type {
+  background: #ecaf4e;
+}
+
+.skills .skills-col:last-child {
+  color: black;
+}
+
+.skills .skills-col:last-child p {
+  color: #c7c7c7;
+}
+
+.skills .skills-col h2 {
+  margin: 1.2rem 0;
+  font-weight: 300;
+}
+
+.skills .skills-col p {
+  font-size: 0.8rem;
+  line-height: 1.5;
 }
 /*# sourceMappingURL=style.css.map */
